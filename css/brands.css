@@ -635,7 +635,7 @@
 /* ho disimparato
 
 /* Pulsante con sfondo immagine sfocata */
-.button.button-hodisimparato {
+.button-hodisimparato {
     position: relative;
     z-index: 0;
 
