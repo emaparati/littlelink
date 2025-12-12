@@ -652,7 +652,7 @@
 }
 
 /* Sfondo immagine sfocato */
-.button.button-hodisimparato::before {
+.button-hodisimparato::before {
     content: "";
     position: absolute;
     inset: 0;
