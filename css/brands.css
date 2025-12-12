@@ -34,22 +34,15 @@
 .button.button-hodisimparato {
     position: relative;
     z-index: 0;
-
-    --button-text: #ffffff;
-    --button-border: 1px solid #ffffff;
-
-    color: var(--button-text);
-    border: var(--button-border);
+    display: block;   /* fondamentale */
+    padding: 14px 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background: transparent;
     overflow: hidden;
-
-    display: block;           /* <----- FONDAMENTALE */
-    padding: 14px 20px;       /* dimensione del bottone */
-    background: transparent;  /* evita overlay */
-    text-decoration: none;    /* rimuove sottolineatura */
-    border-radius: 8px;       /* opzionale ma carino */
+    text-decoration: none;
 }
 
-/* pseudo-elemento che fa da sfondo sfocato */
 .button.button-hodisimparato::before {
     content: "";
     position: absolute;
@@ -57,7 +50,7 @@
     background-image: url("images/Hodisimparatoimg.jpg");
     background-size: cover;
     background-position: center;
-    filter: blur(6px);
+    filter: blur(0px); /* <-- metti a zero per testare */
     transform: scale(1.1);
     z-index: -1;
 }
