@@ -44,7 +44,7 @@
 }
 
 /* pseudo-elemento che fa da sfondo sfocato */
-.button.button-default::before {
+.button.button-hodisimparato::before {
     content: "";
     position: absolute;
     inset: 0;
