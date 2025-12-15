@@ -634,10 +634,9 @@
 
 /* ho disimparato
 
-/* ← INIZIO pulsante sfocato personalizzato */
+/* Pulsante Ho disimparato - FIX LittleLink */
 .button.button-hodisimparato {
     position: relative;
-    z-index: 0;
     color: #ffffff;
     border: 1px solid #ffffff;
     overflow: hidden;
@@ -646,24 +645,28 @@
     align-items: center;
     gap: 8px;
     padding: 10px 18px;
-    background: transparent;
-    text-decoration: none;
+
+    background: none !important; /* OVERRIDE LittleLink */
 }
 
+/* sfondo immagine */
 .button.button-hodisimparato::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("images/Hodisimparatoimg.jpg");
+
+    background-image: url("/images/Hodisimparatoimg.jpg");
     background-size: cover;
     background-position: center;
+
     filter: blur(6px);
-    transform: scale(1.1);
-    z-index: -1;
+    transform: scale(1.15);
+
+    z-index: 0; /* <-- NON negativo */
 }
 
-.button.button-hodisimparato > .icon {
+/* testo e icona sopra l'immagine */
+.button.button-hodisimparato > * {
     position: relative;
     z-index: 1;
 }
-/* ← FINE pulsante sfocato personalizzato */
