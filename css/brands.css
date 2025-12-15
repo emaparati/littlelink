@@ -649,6 +649,7 @@
     text-decoration: none;
 
     overflow: hidden;
+    z-index: 1;
 }
 
 /* sfondo immagine */
@@ -664,25 +665,20 @@
     filter: blur(6px);
     transform: scale(1.15);
 
-    z-index: 0;
+    z-index: -2;
 }
 
-/* overlay leggero per leggibilità (opzionale ma consigliato) */
+/* overlay scuro */
 .button.button-hodisimparato::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.25);
-    z-index: 1;
+    z-index: -1;
 }
 
-/* testo e icona SEMPRE sopra */
-.button.button-hodisimparato,
-.button.button-hodisimparato *,
-.button.button-hodisimparato img,
-.button.button-hodisimparato svg {
+/* icona sopra */
+.button.button-hodisimparato img.icon {
     position: relative;
     z-index: 2;
-    color: #ffffff !important;
-    opacity: 1 !important;
 }
