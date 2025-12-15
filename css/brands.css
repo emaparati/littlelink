@@ -632,9 +632,8 @@
   --button-border:1px solid #FFFFFF;
 }
 
-/* ho disimparato
+/*ho disimparato*/
 
-/* ho disimparato – FIX DEFINITIVO LittleLink */
 .button.button-hodisimparato {
     position: relative;
     display: inline-flex;
@@ -683,7 +682,7 @@
     z-index: 2;
 }
 
-/* attitude
+/* attitude */
 
 .button.button-attitude {
     position: relative;
@@ -733,7 +732,7 @@
     z-index: 2;
 }
 
-/* 1849
+/* 1849 */
 
 .button.button-1849 {
     position: relative;
@@ -783,7 +782,7 @@
     z-index: 2;
 }
 
-/* can't let go
+/* can't let go */
 
 .button.button-cantletgo {
     position: relative;
