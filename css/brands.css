@@ -634,11 +634,10 @@
 
 /* ho disimparato
 
-/* Pulsante con sfondo immagine sfocata */
-.button-hodisimparato {
+/* ← INIZIO pulsante sfocato personalizzato */
+.button.button-hodisimparato {
     position: relative;
     z-index: 0;
-
     color: #ffffff;
     border: 1px solid #ffffff;
     overflow: hidden;
@@ -651,12 +650,11 @@
     text-decoration: none;
 }
 
-/* Sfondo immagine sfocato */
-.button-hodisimparato::before {
+.button.button-hodisimparato::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("images/Hodisimparatoimg.JPG");
+    background-image: url("images/Hodisimparatoimg.jpg");
     background-size: cover;
     background-position: center;
     filter: blur(6px);
@@ -664,8 +662,8 @@
     z-index: -1;
 }
 
-/* Icona sopra lo sfondo */
 .button.button-hodisimparato > .icon {
     position: relative;
     z-index: 1;
 }
+/* ← FINE pulsante sfocato personalizzato */
